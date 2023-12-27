@@ -1,1 +1,2 @@
+[![Coverage badge](https://raw.githubusercontent.com/geek-01/fastapi-example/python-coverage-comment-action-data/badge.svg)](https://raw.githubusercontent.com/geek-01/fastapi-example/python-coverage-comment-action-data)
 # fastapi-example
