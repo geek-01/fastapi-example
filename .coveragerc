@@ -1,4 +1,6 @@
 [report]
 include = app/**
 omit = venv/*
+
+[run]
 relative_files = true
