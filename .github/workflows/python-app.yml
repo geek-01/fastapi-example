@@ -9,13 +9,13 @@ on:
   pull_request:
     branches: [ "main" ]
 
-permissions:
-  pull-requests: write
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+      actions: read
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
@@ -39,4 +39,4 @@ jobs:
     - name: Coverage comment
       uses: py-cov-action/python-coverage-comment-action@v3
       with:
-        GITHUB_TOKEN: ${{ github.token }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
